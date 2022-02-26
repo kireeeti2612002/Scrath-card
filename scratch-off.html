@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Scratch-off Reveal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+        section .content{
+            max-width: 80%;
+            color: #fff;
+            
+        }
+        section .content .h1{
+            font-size: 1000px;
+        }
+        section .content img{
+            image-orientation: 50px;
+        }
+        
+        canvas{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: #fff;
+            z-index: 2;
+            mix-blend-mode: screen;
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+    <section>
+    <div class="content">
+        <h1>I always had a dream about sitting in a beach with my girl... But these iam getting the girl as u❤️... <br>
+
+So many said that mother's love cannot be given back... But i say i will give it back in the name of you to my kids😘😘... Every emotion is important in life, and also every memory is important to me.... I like the way u treat me and be with me... I feel like god created a gift to me but sent it late to me😅... I promise to god that i will make your gift my soul.. And show her the life she cannot imagine 💝<br>
+
+Every second with u makes me feel better and i need u till my last second... And i love u chitti Always and Forever 💛💛</h1>
+        
+    </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.0/lib/p5.js"></script>
+    <script>
+    function setup(){
+    createCanvas(windowWidth, windowHeight);
+    }
+        function draw(){
+            strokeWeight(50);
+            if (mouseIsPressed === true){
+                line(mouseX, mouseY, pmouseX, pmouseY)
+            }
+        }
+    </script>
+</body>
+</html>
